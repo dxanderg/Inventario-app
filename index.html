@@ -26,10 +26,10 @@
 					</div>
 					<ul class="nav navbar-right top-nav">
 						<a href="#">
-							<button class="navbar-toggler hidden-sm-up"  data-toggle="collapse" data-target="#navMenu">
+							<button class="navbar-toggler hidden-md-up"  data-toggle="collapse" data-target=".navbar-ex1-collapse">
 		    					&#9776;
 		    			</button>
-		    			<div id="usuario-login" class="row flex-items-xs-middle flex-items-xs-between" data-toggle="collapse" data-target="#logout">
+		    			<div id="usuario-login" class="row flex-items-xs-middle flex-items-xs-between hidden-sm-down" data-toggle="collapse" data-target="#logout">
 		    				<li class="text-uppercase hidden-xs-down"><i href="#" class="fa fa-user-circle-o"></i></li>
 								<a class="text-uppercase hidden-xs-down">Usuario</a>
 									<ul id="logout" class="collapse">
@@ -46,12 +46,47 @@
 		</header>
 		<!-- HEADER -->
 
+		<!-- Menu Escondido-->
+		<div id="menu-escondido" class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li>
+            <a href="index.html">
+            <i class="fa fa-fw fa-dashboard"></i>Inicio</a>
+        </li>
+        <li>
+            <a href="charts.html">
+            <i class="fa fa-fw fa-edit"></i> Ingresos</a>
+        </li>
+        <li>
+            <a href="tables.html">
+            <i class="fa fa-fw fa-exchange"></i> Traslados</a>
+        </li>
+        <li>
+            <a href="forms.html">
+            <i class="fa fa-fw fa-search"></i> Colsultas</a>
+        </li>
+        <li>
+            <a href="bootstrap-elements.html">
+            <i class="fa fa-fw fa-bell-o"></i> Notificaciones</a>
+        </li>
+        <li>
+            <a href="bootstrap-grid.html">
+            <i class="fa fa-fw fa-user"></i> Usuarios</a>
+        </li>
+        <li class="active">
+            <a href="blank-page.html">
+            <i class="fa fa-fw fa-info"></i> Info</a>
+        </li>
+    	</ul>
+		</div>        
+		<!-- Menu Escondido-->
+
 	  <section id="detalle">
 	  	<div class="container-fluid delgado">
 	  		<div class="row">
 
 	  			<!-- Lista Menu Izquierda -->
-	  			<div class="col-md-2 delgado">
+	  			<div id="menu-wrapper" class="col-md-2 delgado hidden-sm-down">
 				  	<div id="side-menu" class="container">
 				      <ul class="nav navbar-nav side-nav">
 				          <li>
@@ -94,7 +129,6 @@
 				                  </li>
 				              </ul>
 				          </li>
-
 				      </ul>
 				  	</div>
 					</div>

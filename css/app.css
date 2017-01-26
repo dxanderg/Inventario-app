@@ -95,6 +95,7 @@ body{
 	width: 100%;
 	color: black;
 	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	margin: 0 auto;
 }
 
 #contenido h6, h2{
@@ -130,4 +131,27 @@ body{
 #contenido .card h2{
 	padding-top: .3em;
 	font-size: 3em;
+}
+
+#menu-escondido{
+	background-color: #428BCA;
+	text-align: center;
+	margin: 1em auto;
+}
+#menu-escondido li{
+	padding: .5em;
+	cursor: pointer;
+}
+#menu-escondido li:hover{
+	background-color: #58738A;
+}
+
+#menu-escondido li a{
+	color: white;
+	text-decoration: none;
+	 text-transform: uppercase;
+}
+
+#menu-escondido li a i{
+	padding: 0 1.5em;
 }
