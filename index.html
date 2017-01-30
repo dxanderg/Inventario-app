@@ -15,7 +15,7 @@
 </head>
 <body>
 
-	<div class="container-fluid">
+	<div id="main-div" class="container-fluid">
 		<!-- HEADER -->
 		<header id="header-container">
 			<div class="container-fluid">
@@ -30,13 +30,15 @@
 		    					&#9776;
 		    			</button>
 		    			<div id="usuario-login" class="row flex-items-xs-middle flex-items-xs-between hidden-sm-down" data-toggle="collapse" data-target="#logout">
-		    				<li class="text-uppercase hidden-xs-down"><i href="#" class="fa fa-user-circle-o"></i></li>
+		    				<li class="text-uppercase hidden-xs-down">
+		    					<i href="#" class="fa fa-user-circle-o"></i>
+		    				</li>
 								<a class="text-uppercase hidden-xs-down">Usuario</a>
-									<ul id="logout" class="collapse">
-				                  <li>
-				                      <a href="#">Salir</a>
-				                  </li>
-				              </ul>
+								<ul id="logout" class="collapse">
+			          	<li>
+			            	<a href="#">Salir</a>
+			            </li>
+			          </ul>
 								<b class="text-uppercase hidden-xs-down fa fa-fw fa-caret-right"></b>
 							</div>
 						</a>
@@ -91,7 +93,7 @@
 				      <ul class="nav navbar-nav side-nav">
 				          <li>
 				              <a href="index.html">
-				              <i class="fa fa-fw fa-dashboard"></i>Inicio</a>
+				              <i class="fa fa-fw fa-dashboard"></i> Inicio</a>
 				          </li>
 				          <li>
 				              <a href="charts.html">
@@ -117,7 +119,7 @@
 				              <a href="blank-page.html">
 				              <i class="fa fa-fw fa-info"></i> Info</a>
 				          </li>
-				          <li>
+				          <!-- <li>
 				              <a href="javascript:;" data-toggle="collapse" data-target="#demo">
 				              <i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
 				              <ul id="demo" class="collapse">
@@ -128,15 +130,14 @@
 				                      <a href="#">Dropdown Item</a>
 				                  </li>
 				              </ul>
-				          </li>
+				          </li> -->
 				      </ul>
 				  	</div>
 					</div>
 					<!-- Lista Menu Izquierda -->
 
 					<!-- Contenido Derecha-->
-					<div id="contenido" class="container row col-md-10" >
-						<div class="container">
+					<div id="contenido" class="container row col-md-10">			
 								<div class="row">
 									<div class="col-md-4">
 								    <div class="card">
