@@ -141,173 +141,153 @@
 					<!-- Contenido Derecha-->
 					<div id="contenido" class="cont-ingreso container col-md-10">
 						<div class="form-title"><h2>Traslados de Activos</h2></div>
-						<div class="form-group row">
-						  <div class="col-md-1">
-						  	<div class="row">N°</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Bodega</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Puesto</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Activo</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Plaqueta</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row"><></div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Bodega</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Puesto</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Activo</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Plaqueta</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">Campaña</div>
-						  </div>
-						  <div class="col-md-1">
-						  	<div class="row">VB</div>
-						  </div>
-						  
-						  <label for="form-ing-articulo" class="col-md-2 col-form-label">Articulo</label>
-						  <div class="col-md-6" >
-						    <select class="form-control" >
-						    	<option></option>
-								  <option>CPU</option>
-								  <option>Monitor</option>
-								  <option>Hardphone</option>
-								</select>
-						    <!-- <input class="form-control" type="text" value="Artisanal kale" id="example-text-input"> -->
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-
-						<div class="form-group row">
-						  <label for="form-ing-fabricante" class="col-md-2 col-form-label">Fabricante</label>
-						  <div class="col-md-6">
-						    <select class="form-control" >
-						    	<option></option>
-								  <option>Lenovo</option>
-								  <option>HP</option>
-								  <option>Dell</option>
-								</select>
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-modelo" class="col-md-2 col-form-label">Modelo</label>
-						  <div class="col-md-6">
-							  <select class="form-control">
-									  <option></option>
-									  <option>MT - M 3157 - PR7</option>
-									  <option>MT - M 7269 - F3S</option>
-									  <option>MT - M 10B7 - 003TLS</option>
-									</select>
+						
+						<!-- Tabla de Registro de Movimientos -->
+						<div id="tabla_traslados" class="container">
+						  <div class="row clearfix">
+								<div class="col-md-12 column">
+									<table class="table table-bordered table-hover" id="tab_logic">
+										<thead class="table-head thead-inverse">
+											<tr>
+												<th class="text-center">
+													N°
+												</th>
+												<th class="text-center">
+													Bodega
+												</th>
+												<th class="text-center">
+													Puesto
+												</th>
+												<th class="text-center">
+													Activo
+												</th>
+												<th class="text-center">
+													<i class="fa fa-arrows-h"></i>
+												</th>
+												<th class="text-center">
+													Bodega
+												</th>
+												<th class="text-center">
+													Puesto
+												</th>
+												<th class="text-center">
+													Activo
+												</th>
+												<th class="text-center">
+													VB
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr id='addr0'>
+												<td>
+												1
+												</td>
+												<td>
+												<!-- <input type="text" name='bodegai0'  placeholder='Bodega' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control">
+												    	<option></option>
+														  <option>Bodega 1</option>
+														  <option>Bodega 2</option>
+														  <option>Bodega 3</option>
+														  <option>Bodega 4</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<!-- <input type="text" name='puestoi0' placeholder='Puesto' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control" >
+												    	<option></option>
+														  <option>200</option>
+														  <option>201</option>
+														  <option>202</option>
+														  <option>203</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<!-- <input type="text" name='activoi0' placeholder='Activo' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control" >
+												    	<option></option>
+														  <option>CPU</option>
+														  <option>Monitor</option>
+														  <option>Hardphone</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<i class="fa fa-arrows-h"></i>
+												</td>
+												<td>
+												<!-- <input type="text" name='bodegaf0'  placeholder='Bodega' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control" >
+												    	<option></option>
+														  <option>Bodega 1</option>
+														  <option>Bodega 2</option>
+														  <option>Bodega 3</option>
+														  <option>Bodega 4</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<!-- <input type="text" name='puestof0' placeholder='Puesto' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control" >
+												    	<option></option>
+														  <option>200</option>
+														  <option>201</option>
+														  <option>202</option>
+														  <option>203</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<!-- <input type="text" name='activof0' placeholder='Activo' class="form-control"/> -->
+												<div id="select-list">
+												  <div class="">
+												    <select class="form-control" >
+												    	<option></option>
+														  <option>CPU</option>
+														  <option>Monitor</option>
+														  <option>Hardphone</option>
+														</select>
+												  </div>
+												</div>
+												</td>
+												<td>
+												<input type="checkbox" name="inversa" class="form-check-input big-checkbox">
+												</td>
+											</tr>
+						          <tr id='addr1'></tr>
+										</tbody>
+									</table>
 								</div>
-								<div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
+							</div>
+							<div class="row add-container">
+								<div class="col-md-6 row">
+									<a id="add_row" class="btn btn-default pull-left"><i class="fa fa-plus-circle"></i></a>
+								</div>
+								<div class="col-md-6 row">
+									<a id='delete_row' class="pull-right btn btn-default"><i class="fa fa-minus-circle"></i></a>	
+								</div>
+							</div>
 						</div>
-						<div class="form-group row">
-						  <label for="form-ing-serial" class="col-md-2 col-form-label">Serial</label>
-						  <div class="col-md-6">
-						    <input type="email" class="form-control" id="inputEmail3" placeholder="Serial Fabricante">
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-plaqueta" class="col-md-2 col-form-label">Plaqueta</label>
-						  <div class="col-md-6">
-						    <input type="email" class="form-control" id="inputEmail3" placeholder="Serial Digitex">
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-estado" class="col-md-2 col-form-label">Estado</label>
-						  <div class="col-md-6">
-						    <select class="form-control">
-									  <option>Activo</option>
-									  <option>De Baja</option>
-									</select>
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-sede" class="col-md-2 col-form-label">Sede</label>
-						  <div class="col-md-6">
-						    <select class="form-control">
-									  <option>Ibague</option>
-									  <option>Manizalez</option>
-									  <option>Bogota</option>
-									  <option>Armenia</option>
-									</select>
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-ubicacion" class="col-md-2 col-form-label">Ubicacion</label>
-						  <div class="col-md-6">
-						    <select class="form-control">
-									  <option>Bodega 1</option>
-									  <option>Bodega 2</option>
-									  <option>Bodega 3</option>
-									  <option>Bodega 4</option>
-									  <option>Bodega 4 - Encerramiento</option>
-									  <option>Administracion</option>
-									  <option>Sala de Formacion 1</option>
-									  <option>Sala de Formacion 2</option>
-									  <option>Sala de Formacion 3</option>
-									  <option>Sala de Formacion 4</option>
-									  <option>Sala de Formacion 5</option>
-									</select>
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-campaña" class="col-md-2 col-form-label">Campaña</label>
-						  <div class="col-md-6">
-						    <select class="form-control">
-									  <option>Colmena Seguros</option>
-									  <option>Televentas ARL</option>
-									  <option>BCSC</option>
-									  <option>BCSC Cobranzas</option>
-									  <option>BCSC Retencion</option>
-									  <option>Movistar IN</option>
-									  <option>Chile Televentas</option>
-									</select>
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-numpuesto" class="col-md-2 col-form-label">N° Puesto</label>
-						  <div class="col-md-6">
-						    <input class="form-control" type="number" value="" id="example-number-input" placeholder="Numero del Puesto">
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<div class="form-group row">
-						  <label for="form-ing-fecha" class="col-md-2 col-form-label">Fecha</label>
-						  <div class="col-md-6">
-						    <input class="form-control" type="date" value="" id="example-date-input">
-						  </div>
-						  <div class="col-md-4 form-control-feedback hidden-xs-up">Por favor, Ingresa la Informacion.</div>
-						</div>
-						<!-- <div class="form-group row  has-danger">
-				      <label for="inputHorizontalDnger" class="col-sm-2 col-form-label">Email</label>
-				      <div class="col-sm-10">
-				        <input type="email" class="form-control form-control-danger" id="inputHorizontalDnger" placeholder="name@example.com">
-				        <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
-				        <small class="form-text text-muted">Example help text that remains unchanged.</small>
-				      </div>
-				    </div> -->
+						<!-- Tabla de Registro de Movimientos -->
+
 				    <div class="button-container form-group row">
 						  <div class="col-md-2">
 						    <button class="div-button btn btn-primary btn-block">Registrar</button>
@@ -326,5 +306,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>

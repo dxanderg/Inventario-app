@@ -201,3 +201,49 @@ body{
 	border: 1px solid #2DBD8D;
 	color: #2DBD8D;
 }
+
+#tabla_traslados{
+	padding: 0;
+	font-family: 'Catamaran';
+}
+
+#tabla_traslados table th,
+#tabla_traslados table tr{
+	text-align: center;
+	margin: 0 auto;
+}
+
+#tabla_traslados table td{
+	font-size: 1.5em;
+}
+#tabla_traslados .big-checkbox{
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#tabla_traslados .table-head{
+	font-size: 1.2em;
+	vertical-align: middle;
+}
+
+#tabla_traslados .table-head th{
+	font-weight: normal;
+}
+
+#tabla_traslados .btn{
+	font-size: 2.5em;
+}
+
+.add-container a{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.add-container a .fa-plus-circle{
+	color: #7DC146;
+}
+.add-container a .fa-minus-circle{
+	color: red;
+}
