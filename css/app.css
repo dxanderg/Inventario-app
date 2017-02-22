@@ -239,14 +239,20 @@ body{
 
 .add-container a{
 	text-align: center;
-	margin: 0 auto;
+	margin: 0 auto;	
 }
 
 .add-container a .fa-plus-circle{
 	color: #7DC146;
+	transition: all .3s ease;
 }
 .add-container a .fa-minus-circle{
 	color: red;
+	transition: all .3s ease;
+}
+.add-container a .fa-plus-circle:hover,
+.add-container a .fa-minus-circle:hover{
+	color: black;
 }
 
 .multiselect{
@@ -259,4 +265,12 @@ select.form-control:not([size]):not([multiple]){
 	height: 38px;
 	padding: 0 5px;
 	text-align: center;
+}
+
+#buscar_campo{
+	font-family: 'Catamaran';
+}
+
+#buscar_campo span{
+	user-select: none;
 }
