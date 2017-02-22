@@ -232,7 +232,8 @@ body{
 	font-weight: normal;
 }
 
-#tabla_traslados .btn{
+#tabla_traslados #add_row i,
+#tabla_traslados #delete_row i{
 	font-size: 2.5em;
 }
 
@@ -246,4 +247,16 @@ body{
 }
 .add-container a .fa-minus-circle{
 	color: red;
+}
+
+.multiselect{
+	background-color: white;
+	border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    color: #55595c;
+}
+select.form-control:not([size]):not([multiple]){
+	height: 38px;
+	padding: 0 5px;
+	text-align: center;
 }
