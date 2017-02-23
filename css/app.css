@@ -202,38 +202,38 @@ body{
 	color: #2DBD8D;
 }
 
-#tabla_traslados{
+.tablas{
 	padding: 0;
 	font-family: 'Catamaran';
 }
 
-#tabla_traslados table th,
-#tabla_traslados table tr{
+.tablas table th,
+.tablas table tr{
 	text-align: center;
 	margin: 0 auto;
 }
 
-#tabla_traslados table td{
+.tablas table td{
 	font-size: 1.5em;
 }
-#tabla_traslados .big-checkbox{
+.tablas .big-checkbox{
 	width: 20px;
 	height: 20px;
 	text-align: center;
 	margin: 0 auto;
 }
 
-#tabla_traslados .table-head{
+.tablas .table-head{
 	font-size: 1.2em;
 	vertical-align: middle;
 }
 
-#tabla_traslados .table-head th{
+.tablas .table-head th{
 	font-weight: normal;
 }
 
-#tabla_traslados #add_row i,
-#tabla_traslados #delete_row i{
+.tablas #add_row i,
+.tablas #delete_row i{
 	font-size: 2.5em;
 }
 
@@ -267,10 +267,30 @@ select.form-control:not([size]):not([multiple]){
 	text-align: center;
 }
 
-#buscar_campo{
+#buscar_campo,
+#ticket_campo{
 	font-family: 'Catamaran';
+	margin-bottom: 1em;
 }
 
-#buscar_campo span{
+#buscar_campo span,
+#ticket_campo span{
 	user-select: none;
+}
+
+#tabla_consultas tbody{
+	font-size: 12px;
+}
+
+#pill{
+	background-color: red;
+	color: white;
+	margin: 0 5px;
+	padding: 0 .4em 0 .3em;
+	border-radius: .5em;
+	font-weight: bold;
+}
+#pill:hover,
+#pill:focus{
+	background-color:#c9302c;
 }

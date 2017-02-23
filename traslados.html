@@ -113,7 +113,7 @@
 				          </li>
 				          <li>
 				              <a href="notificaciones.html">
-				              <i class="fa fa-fw fa-bell-o"></i> Notificaciones</a>
+				              <i class="fa fa-fw fa-bell-o"></i> Notificaciones <span id="pill">1</span></a>
 				          </li>
 				          <li>
 				              <a href="usuarios.html">
@@ -143,9 +143,16 @@
 					<!-- Contenido Derecha-->
 					<div id="contenido" class="cont-ingreso container col-md-10">
 						<div class="form-title"><h2>Traslados de Activos</h2></div>
-						
+						<div id="ticket_campo" class="container">
+						  <div class="row clearfix">
+								<div class="input-group ">
+									<span class="input-group-addon" id="sizing-addon1">Ticket</span>
+									<input type="text" class="form-control" placeholder="Ingrese el numero de la peticion" aria-describedby="sizing-addon1">
+								</div>
+							</div>
+						</div>
 						<!-- Tabla de Registro de Movimientos -->
-						<div id="tabla_traslados" class="container">
+						<div id="tabla_traslados" class="container tablas">
 						  <div class="row clearfix">
 								<div class="col-md-12 column">
 									<table class="table table-bordered table-hover" id="tab_logic">
